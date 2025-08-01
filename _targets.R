@@ -11,5 +11,10 @@ list(
   tar_target(data_file, "data/clean_data.csv", format = "file"),
   tar_target(data, load_data(data_file)),
   # plot AI usage
-  tar_target(plot_usage, plot_AI_usage(data))
+  tar_target(plot_usage, plot_AI_usage(data)),
+  # print session info for reproducibility
+  tar_target(
+    sessionInfo,
+    writeLines(capture.output(sessionInfo()), "sessionInfo.txt")
+  )
 )
