@@ -12,6 +12,8 @@ list(
   tar_target(data, load_data(data_file)),
   # plot AI usage
   tar_target(plot_usage, plot_AI_usage(data)),
+  # plot correlation matrix
+  tar_target(plot_cor, plot_correlations(data)),
   # print session info for reproducibility
   tar_target(
     sessionInfo,
