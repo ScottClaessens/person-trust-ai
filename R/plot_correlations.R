@@ -1,11 +1,11 @@
-# function to plot correlation matrix based on general AI questions
-plot_correlations <- function(data) {
+# function to plot correlation matrix based on specific AI type
+plot_correlations <- function(data, AI_type = "General AI") {
   # get upper triangle of correlation matrix
   cor_matrix <-
     data %>%
-    filter(type == "General AI") %>%
+    filter(type == AI_type) %>%
     dplyr::select(trust:predictability) %>%
-    cor()
+    cor(use = "pairwise")
   cor_matrix[lower.tri(cor_matrix)] <- NA
   diag(cor_matrix) <- NA
   # function to convert variable names
@@ -42,7 +42,7 @@ plot_correlations <- function(data) {
       limits = c(-1, 1)
     ) +
     labs(
-      title = "Correlations for 'General AI'",
+      title = paste0("Correlations for '", AI_type, "'"),
       x = NULL,
       y = NULL
     ) +
@@ -53,10 +53,24 @@ plot_correlations <- function(data) {
       axis.text.x = element_text(angle = 35, hjust = 1, vjust = 1),
       legend.ticks = element_blank() 
     )
+  # lower case AI type name for file saving
+  convert_string <- function(x) {
+    x <- str_replace_all(x, " ", "_")
+    x <- str_replace_all(x, "-", "_")
+    x <- str_replace_all(x, "'", "")
+    x <- str_to_lower(x)
+    x <- str_replace_all(x, "ai", "AI")
+    x <- str_replace_all(x, "AIr", "air")
+    str_replace_all(x, "dall_e", "dalle")
+  }
   # save and return
   ggsave(
     plot = p,
-    file = "plots/correlations.pdf",
+    file = paste0(
+      "plots/correlations/correlations_",
+      convert_string(AI_type),
+      ".pdf"
+    ),
     height = 4,
     width = 5.3
   )
