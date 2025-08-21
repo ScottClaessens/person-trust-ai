@@ -74,4 +74,5 @@ plot_correlations <- function(data, AI_type = "General AI") {
     height = 4,
     width = 5.3
   )
+  return(p)
 }
