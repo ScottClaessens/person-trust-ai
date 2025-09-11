@@ -23,11 +23,24 @@ list(
         "Predictive policing algorithm", "Apple's Siri", "AI therapist",
         "Skin cancer diagnosis app", "Military cybersecurity AI",
         "Air traffic control AI", "Google Maps AI", "Audio transcription AI", 
-        "Robot vacuum", "DeepSeek", "Robot soldier"
+        "Robot vacuum", "DeepSeek", "Robot soldier", "Facial recognition AI",
+        "Medical triage AI"
       )
     ),
     tar_target(plot_cor, plot_correlations(data, AI_type)),
     tar_target(plot_hist, plot_histograms(data, AI_type))
+  ),
+  # fit model 0 - rankings
+  tar_map(
+    values = tibble(
+      outcome = c(
+        "trust", "reliable", "competent", "genuine", "ethical", "autonomy",
+        "potential_good", "potential_harm", "interpretability",
+        "explainability", "humanlike", "predictability"
+      )
+    ),
+    tar_target(fit0, fit_model0(data, outcome)),
+    tar_target(plot0, plot_model0(data, fit0, outcome))
   ),
   # fit model 1 - predictors of trust
   tar_map(
