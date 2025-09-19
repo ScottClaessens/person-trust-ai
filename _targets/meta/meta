@@ -3,25 +3,6 @@ data_file|stem|314214595f3a0773|017b2253abfc9754|2c530c1562a7fbd1|-679625259|dat
 data|stem|bad71fa6d7707ffd|237276f659722970|d7fd469be47aa633|33550471||t20301.3690330672s|s52890b|52890|rds|local|vector|||0.641||
 plot_usage|stem|3bd240c37d1c6304|a33b9d88e6079b9b|95a4bedde38b02b4|563089675||t20301.3696173154s|s219514b|219514|rds|local|vector|||0.219|Removed 1 row containing missing values or values outside the scale range (`geom_col()`).|
 sessionInfo|stem|4d420e734d24941e|6f338939dd102f8f|2c530c1562a7fbd1|1164010252||t20301.3751831704s|s44b|44|rds|local|vector|||0.344|package 'tidyverse' was built under R version 4.4.3|
-plot_cor_DeepSeek|stem|c3a426a578383096|f891b43ba26ae5c5|ea5ffca49ab7df93|-592377897||t20321.3699598644s|s221072b|221072|rds|local|vector|||0.578||
-plot_cor_DALL.E|stem|fa6931267668d636|e8d5c896128a6a13|ea5ffca49ab7df93|-429493230||t20321.3702114954s|s222579b|222579|rds|local|vector|||0.094||
-plot_cor_Robot.soldier|stem|3d623309021490ed|bc2c0a801ae9f0cf|ea5ffca49ab7df93|-240550498||t20321.3702142019s|s222566b|222566|rds|local|vector|||0.125||
-plot_cor_Audio.transcription.AI|stem|a45ec6f49e7d8700|525986daeb39bd5c|ea5ffca49ab7df93|-1141802985||t20321.3702163243s|s222607b|222607|rds|local|vector|||0.094||
-plot_cor_Apples.Siri|stem|6ee354101f866701|861780978a5de771|ea5ffca49ab7df93|945981147||t20321.3702239238s|s222558b|222558|rds|local|vector|||0.078||
-plot_cor_AI.therapist|stem|d0d789583d6d6fe0|e75e656a7bee712f|ea5ffca49ab7df93|-1856585750||t20321.3702497496s|s222581b|222581|rds|local|vector|||0.078||
-plot_cor_Self.driving.car|stem|52bd7006dfe1f9be|92df21f180a9291d|ea5ffca49ab7df93|1901692716||t20321.3702520365s|s222573b|222573|rds|local|vector|||0.078||
-plot_cor_Air.traffic.control.AI|stem|2f0a15174861c3e9|d9268dc2a697173e|ea5ffca49ab7df93|318527833||t20321.3702542844s|s222609b|222609|rds|local|vector|||0.078||
-plot_cor_General.AI|stem|f3832ca771a402b6|2ed35cda0c124afb|ea5ffca49ab7df93|2143032349||t20321.3702635652s|s222563b|222563|rds|local|vector|||0.094||
-plot_cor_Instagram.filter|stem|aa603aad71ced249|5c4a3b9819da3dda|ea5ffca49ab7df93|2143817561||t20321.370265894s|s222600b|222600|rds|local|vector|||0.109||
-plot_cor_Google.Maps.AI|stem|6c459a79caa6efcf|5587e3cf0e7d80a9|ea5ffca49ab7df93|-1518111675||t20321.3702817224s|s222568b|222568|rds|local|vector|||0.109||
-plot_cor_Military.cybersecurity.AI|stem|9185df80e9c60818|c8609d123a8cd934|ea5ffca49ab7df93|-292151029||t20321.3703087196s|s222612b|222612|rds|local|vector|||0.078||
-plot_cor_AI.superintelligence|stem|3e878911a28ad5d5|1a2e7c5cb6ba52c0|ea5ffca49ab7df93|370938524||t20321.370318103s|s222585b|222585|rds|local|vector|||0.078||
-plot_cor_Skin.cancer.diagnosis.app|stem|3c28a495b6629367|83215a2414995e19|ea5ffca49ab7df93|-1805328679||t20321.3703278902s|s222606b|222606|rds|local|vector|||0.109||
-plot_cor_ChatGPT|stem|c5e06ba1a6bf3a34|ece104d83d2c9386|ea5ffca49ab7df93|1433043653||t20321.3703374041s|s222506b|222506|rds|local|vector|||0.109||
-plot_cor_Robot.vacuum|stem|5dbd71cc0fb92acc|7f03a02d629505c3|ea5ffca49ab7df93|1883420124||t20321.3703401191s|s222579b|222579|rds|local|vector|||0.094||
-plot_cor_Predictive.policing.algorithm|stem|7996c10cf612c23f|be9c606d839d4a82|ea5ffca49ab7df93|-742506967||t20321.3703424399s|s222607b|222607|rds|local|vector|||0.078||
-plot_cor_Autonomous.killer.drone|stem|6dacfe345da6adfc|fc5c4c1160cc30c4|ea5ffca49ab7df93|-751059125||t20321.3703450094s|s222623b|222623|rds|local|vector|||0.093||
-plot_cor_Predictive.sentencing.algorithm|stem|54fc041ca58d4169|753003721663da9b|ea5ffca49ab7df93|-1619739017||t20321.3703626638s|s222595b|222595|rds|local|vector|||0.109||
 plot_hist_AI.superintelligence|stem|a161b5455344e3e3|60d78e868337f985|9bb5b9d8bb9fbc33|-1258284305||t20321.3711202073s|s273900b|273900|rds|local|vector|||0.656|Removed 978 rows containing non-finite outside the scale range (`stat_count()`).|
 plot_hist_Audio.transcription.AI|stem|6b24e631d883eb49|507900e329b1d9bd|9bb5b9d8bb9fbc33|1662783264||t20321.3711267602s|s273003b|273003|rds|local|vector|||0.406|Removed 894 rows containing non-finite outside the scale range (`stat_count()`).|
 plot_hist_DeepSeek|stem|5c9121f5e191abff|31de611c512599ad|9bb5b9d8bb9fbc33|611673671||t20321.3711338322s|s277101b|277101|rds|local|vector|||0.421|Removed 1092 rows containing non-finite outside the scale range (`stat_count()`).|
@@ -91,9 +72,7 @@ plot0_reliable|stem|a819fdfafb7837ec|d8ff788df5137f22|c6bace548c940f27|-14350942
 plot0_explainability|stem|14ec29d03ccf866a|0a59a3719eecf814|51bfbee717a0eba1|33693945||t20342.6377130069s|s81294497b|81294497|rds|local|vector|||1.422|Vectorized input to `element_text()` is not officially supported. ℹ Results may be unexpected or may change in future versions of ggplot2.|
 plot0_potential_good|stem|d9ac328ad050a105|36cbaad29996b0b3|f5bcbbde067aa335|-802079682||t20342.6377886894s|s81314713b|81314713|rds|local|vector|||1.343|Vectorized input to `element_text()` is not officially supported. ℹ Results may be unexpected or may change in future versions of ggplot2.|
 fit0_potential_harm|stem|138e1fd415ef6710|09bd9ea436f1a763|9dadb9a7bcc707af|634832531||t20342.6547576435s|s67855098b|67855098|rds|local|vector|||1286.187|Rows containing NAs were excluded from the model.|
-plot_cor_Medical.triage.AI|stem|6b9b7918b46d8d5d|64cbcd3d197780f1|ea5ffca49ab7df93|-316428394||t20342.6547862564s|s221418b|221418|rds|local|vector|||1.922||
 fit0_interpretability|stem|b231c1509a7b8421|7ab313ce2ee7a5c1|9dadb9a7bcc707af|1294845069||t20342.6613832271s|s68158953b|68158953|rds|local|vector|||565.532|Rows containing NAs were excluded from the model.|
-plot_cor_Facial.recognition.AI|stem|42694159e9114ae9|49502b26ee888f2f|ea5ffca49ab7df93|-1604859633||t20342.661391724s|s222907b|222907|rds|local|vector|||0.312||
 fit0_competent|stem|6c00486116a2927f|1488f0e4a593bc12|9dadb9a7bcc707af|107943949||t20342.6663529141s|s68006837b|68006837|rds|local|vector|||425.172|Rows containing NAs were excluded from the model.|
 fit0_autonomy|stem|a80d584789d7ecf1|79a4d66af7b65b91|9dadb9a7bcc707af|276201966||t20342.6701833376s|s68144423b|68144423|rds|local|vector|||327.109|Rows containing NAs were excluded from the model.|
 plot_hist_Medical.triage.AI|stem|6abd3dce3bdbe61d|3f525f6ac92ce87c|9bb5b9d8bb9fbc33|-907797795||t20342.6701981061s|s276027b|276027|rds|local|vector|||0.781|Removed 1080 rows containing non-finite outside the scale range (`stat_count()`).|
@@ -103,9 +82,31 @@ plot0_ethical|stem|b97a6313abf79d4a|2d56f928d97ac54f|56759e518c01557b|1213674674
 plot0_interpretability|stem|5b5f810eb599e8ef|7bf5f87afd78037a|0382f05e97328bef|-586124312||t20342.670562477s|s81428699b|81428699|rds|local|vector|||1.672|Vectorized input to `element_text()` is not officially supported. ℹ Results may be unexpected or may change in future versions of ggplot2.|
 plot0_competent|stem|19fd1b29ce5b1310|7297c5a8372d031a|8a6dcb3b32255f6e|122597317||t20342.6706448681s|s81242135b|81242135|rds|local|vector|||1.11|Vectorized input to `element_text()` is not officially supported. ℹ Results may be unexpected or may change in future versions of ggplot2.|
 plot0_autonomy|stem|730b62279b77df92|f6996a14b3dcf832|3480a80906728bc9|-1437060643||t20342.6707254304s|s81375146b|81375146|rds|local|vector|||1.125|Vectorized input to `element_text()` is not officially supported. ℹ Results may be unexpected or may change in future versions of ggplot2.|
+plot_cor_Google.Maps.AI|stem|ec8b72ac73889f42|5587e3cf0e7d80a9|4d4c74a4ba9efcf7|-1518111675||t20350.4402318785s|s225088b|225088|rds|local|vector|||0.765||
+plot_cor_Self.driving.car|stem|2f96bda0442bf8a3|92df21f180a9291d|4d4c74a4ba9efcf7|1901692716||t20350.4402372847s|s226696b|226696|rds|local|vector|||0.234||
+plot_cor_Air.traffic.control.AI|stem|c39f87b14550daa5|d9268dc2a697173e|4d4c74a4ba9efcf7|318527833||t20350.4402420906s|s226737b|226737|rds|local|vector|||0.141||
+plot_cor_DeepSeek|stem|fcbc5987d0184788|f891b43ba26ae5c5|4d4c74a4ba9efcf7|-592377897||t20350.4402455668s|s226651b|226651|rds|local|vector|||0.141||
+plot_cor_Medical.triage.AI|stem|b61d89e668f64743|64cbcd3d197780f1|4d4c74a4ba9efcf7|-316428394||t20350.440249799s|s226700b|226700|rds|local|vector|||0.156||
+plot_cor_DALL.E|stem|1b6912624bed8981|e8d5c896128a6a13|4d4c74a4ba9efcf7|-429493230||t20350.4402537845s|s226706b|226706|rds|local|vector|||0.141||
+plot_cor_Skin.cancer.diagnosis.app|stem|dd1c285a0eec6105|83215a2414995e19|4d4c74a4ba9efcf7|-1805328679||t20350.4402581495s|s226733b|226733|rds|local|vector|||0.219||
+plot_cor_ChatGPT|stem|9de2b9423ed3855e|ece104d83d2c9386|4d4c74a4ba9efcf7|1433043653||t20350.4402628412s|s226624b|226624|rds|local|vector|||0.187||
+plot_cor_Facial.recognition.AI|stem|a81925c93749983c|49502b26ee888f2f|4d4c74a4ba9efcf7|-1604859633||t20350.4402674533s|s226728b|226728|rds|local|vector|||0.125||
+plot_cor_Predictive.policing.algorithm|stem|2ad270452ada8b15|be9c606d839d4a82|4d4c74a4ba9efcf7|-742506967||t20350.4402715428s|s226732b|226732|rds|local|vector|||0.14||
+plot_cor_General.AI|stem|b80e5841181aa03a|2ed35cda0c124afb|4d4c74a4ba9efcf7|2143032349||t20350.4402753352s|s226686b|226686|rds|local|vector|||0.125||
+plot_cor_Instagram.filter|stem|df4a92cddc6214e7|5c4a3b9819da3dda|4d4c74a4ba9efcf7|2143817561||t20350.4402795638s|s226718b|226718|rds|local|vector|||0.188||
+plot_cor_Audio.transcription.AI|stem|d353a3387312bd78|525986daeb39bd5c|4d4c74a4ba9efcf7|-1141802985||t20350.4402829804s|s226728b|226728|rds|local|vector|||0.125||
+plot_cor_Autonomous.killer.drone|stem|e59ce749dcef061f|fc5c4c1160cc30c4|4d4c74a4ba9efcf7|-751059125||t20350.4402870336s|s226748b|226748|rds|local|vector|||0.141||
+plot_cor_Military.cybersecurity.AI|stem|780ae5df3738159e|c8609d123a8cd934|4d4c74a4ba9efcf7|-292151029||t20350.4402912073s|s226741b|226741|rds|local|vector|||0.156||
+plot_cor_Apples.Siri|stem|3bcbdb04c7e214db|861780978a5de771|4d4c74a4ba9efcf7|945981147||t20350.4402949511s|s226684b|226684|rds|local|vector|||0.125||
+plot_cor_Predictive.sentencing.algorithm|stem|8a2be50385f64835|753003721663da9b|4d4c74a4ba9efcf7|-1619739017||t20350.4402988452s|s226716b|226716|rds|local|vector|||0.125||
+plot_cor_AI.superintelligence|stem|14ca5febd7cc53d8|1a2e7c5cb6ba52c0|4d4c74a4ba9efcf7|370938524||t20350.4403026985s|s226705b|226705|rds|local|vector|||0.156||
+plot_cor_Robot.soldier|stem|19a375812c4f88dc|bc2c0a801ae9f0cf|4d4c74a4ba9efcf7|-240550498||t20350.4403100096s|s226685b|226685|rds|local|vector|||0.453||
+plot_cor_Robot.vacuum|stem|b5481845743dec3a|7f03a02d629505c3|4d4c74a4ba9efcf7|1883420124||t20350.4403170082s|s226694b|226694|rds|local|vector|||0.172||
+plot_cor_AI.therapist|stem|3bb16a08af6536fc|e75e656a7bee712f|4d4c74a4ba9efcf7|-1856585750||t20350.4403295472s|s226695b|226695|rds|local|vector|||0.531||
 extract_slope_sd|function|0fb2b82858c5542b
-plot_correlations|function|0701ef2d6f6e2fce
+plot_correlations|function|cfac5ae33e77a3f1
 fit_model0|function|a0608a8b212f461b
+.Random.seed|object|3d4b30f6cb1ccca2
 fit_model1|function|843f73ecc876a9d8
 plot_model0|function|461b4f7df6252e1c
 plot_model1|function|a04f8d1d7dc1ef94
@@ -113,3 +114,4 @@ load_data|function|748a15238dcb5e12
 plot_slope_sd|function|7bb654bec3f0b56b
 plot_histograms|function|6ee42f871a4d27d0
 plot_AI_usage|function|8076150adba5918e
+summary|stem|f745d107f2729391|e3562f31cfc9501c|428e7cb6f9252dd3|-1884548258|quarto/summary/summary.html*quarto/summary/summary.qmd|t20350.4610105114s|s1474394b|1474394|file|local|vector|||25.125||

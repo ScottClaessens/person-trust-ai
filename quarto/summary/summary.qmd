@@ -1,0 +1,160 @@
+---
+title: "Predictors of Trust in AI"
+subtitle: "Summary of Preliminary Results"
+author: "Scott Claessens"
+date: "`{r} Sys.Date()`"
+format:
+  html:
+    html-table-processing: none
+    embed-resources: true
+toc: true
+execute:
+  echo: false
+  warning: false
+  error: false
+---
+
+```{r load-packages}
+library(targets)
+library(tidyverse)
+```
+
+This document summarises the preliminary results of our study on the predictors
+of trust in artificial intelligence systems.
+
+We recruited 800 participants (N = 690 after exclusions for low Captcha scores
+and failed attention check) from Prolific. In the study, participants answered
+questions about both "general AI" and a random subset of specific AI systems (5 
+out of 20). In each case, we asked participants how much they trusted the system
+and various other questions, including perceived reliability, competence,
+genuine nature, ethicality, autonomy, potential for good, potential for harm,
+interpretability, explainability, anthropomorphism, and predictability. We also
+collected data on whether participants had heard of and used the different AI
+systems.
+
+Data and code for the study can be found here:
+<https://github.com/ScottClaessens/person-trust-AI>
+
+## Reported usage of different AI systems
+
+We found that some AI systems were more familiar to participants than others.
+
+```{r}
+#| label: fig-usage
+#| fig-cap: "Proportion of participants that have heard of and used different AI systems"
+#| out-width: "100%"
+#| out-height: "66%"
+
+tar_read(plot_usage)
+```
+
+## Reported trust in different AI systems
+
+We ranked average ratings of trust for "general AI" and the different AI 
+systems. The results show that participants trust some AI systems more than
+others, with "general AI" sitting somewhere in the middle.
+
+```{r}
+#| label: fig-trust-ranking
+#| fig-cap: "Self-reported trust in different AI systems"
+#| out-width: "100%"
+#| out-height: "80%"
+
+tar_read(plot0_trust)
+```
+
+## Predictors of trust in general AI
+
+For general AI, we looked at the correlation matrix for self-reported trust and
+all other questions.
+
+```{r}
+#| label: fig-cor-general
+#| fig-cap: "Correlation matrix for 'General AI'"
+#| out-width: "100%"
+#| out-height: "75%"
+
+tar_read(plot_cor_General.AI)
+```
+
+We found that perceived reliability, competence, genuine nature, and ethicality
+have the strongest positive correlations with trust. This makes sense, since 
+previous work has suggested that trust in AI is a multidimensional concept that
+is made up of both performance trust (reliability and competence) and moral 
+trust (genuine nature and ethicality; Malle & Ullman, 2021). Trust is also 
+strongly positively correlated with the belief that AI has the potential for 
+good.
+
+Other variables are also correlated with trust, but to a lesser degree.
+
+## Predictors of trust in different AI systems
+
+To assess how this pattern varies across different AI systems, we fitted a
+series of multilevel models that allowed the effects of predictors to vary
+across AI systems. The variance parameter for the varying slopes allows us to
+determine how much the effect of each predictor on trust *varies* across 
+different AI systems.
+
+```{r}
+#| label: fig-varying-slopes
+#| fig-cap: "Variance in slopes across different AI systems"
+#| out-width: "100%"
+#| out-height: "73%"
+
+tar_read(plot_slope_sds)
+```
+
+This plot suggests that, for example, the effect of interpretability on trust
+does not vary much across different AI systems.
+
+```{r}
+#| label: fig-interpretability
+#| fig-cap: "Effect of interpretability on trust across different AI systems"
+#| out-width: "100%"
+#| out-height: "83%"
+
+tar_read(plot1_interpretability)
+```
+
+On the other hand, the effect of competence on trust varies much more across
+different AI systems -- though the effect is still positive for all AI systems.
+
+```{r}
+#| label: fig-competence
+#| fig-cap: "Effect of competence on trust across different AI systems"
+#| out-width: "100%"
+#| out-height: "83%"
+
+tar_read(plot1_competent)
+```
+
+## Future directions
+
+There is more that we can do with this dataset:
+
+- **Which types of AI are most prototypical?** We pre-registered that we would
+conduct a principal components analysis on all the variables and map the 
+different AI types in the dimensional space to determine which are closest to
+"general AI". In other words, which types of AI are people probably thinking 
+about when surveys ask them about AI in general? Unfortunately for us, 
+everything is highly correlated in this dataset, meaning that PCA just pulls out
+a single dimension (which can be conceptualised as how "positive" or "negative"
+participants feel).
+- **How does trust vary across individuals?** We have data on demographics,
+political ideology, and familiarity with AI, so we could potentially use these
+as predictors of trust.
+- **Are there any interaction effects?** We have looked at predictors 
+separately. But the variables likely interact with each other. For example,
+competence is probably a weaker predictor of trust for autonomous killer drones
+because participants believe that this AI has the potential for harm -- they
+don't want it to achieve that harm more competently!
+
+Beyond these questions, we would like to scale this up across countries. Before
+doing this, it would be good to get some direction on what is most interesting
+to focus on going forward.
+
+## References
+
+Malle, B. F., & Ullman, D. (2021). A multidimensional conception and measure of 
+human-robot trust. In *Trust in human-robot interaction* (pp. 3-25). Academic 
+Press.

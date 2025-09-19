@@ -33,8 +33,16 @@ plot_correlations <- function(data, AI_type = "General AI") {
         }
       )
     ) %>%
-    ggplot(aes(x, fct_rev(y), fill = cor)) +
+    ggplot(
+      aes(
+        x = x,
+        y = fct_rev(y),
+        fill = cor,
+        label = format(round(cor, 2), nsmall = 2)
+      )
+    ) +
     geom_tile() +
+    geom_text(size = 2) +
     scale_fill_gradient2(
       name = NULL,
       low = "blue",

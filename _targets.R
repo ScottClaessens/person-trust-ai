@@ -3,7 +3,7 @@ library(tarchetypes)
 library(tidyverse)
 
 # load packages and scripts
-tar_option_set(packages = c("brms", "tidybayes", "tidyverse"))
+tar_option_set(packages = c("brms", "Hmisc", "tidybayes", "tidyverse"))
 tar_source()
 
 # pipeline
@@ -66,6 +66,8 @@ list(
       )
     )
   ),
+  # knit summary of results
+  tar_quarto(summary, "quarto/summary/summary.qmd", quiet = FALSE),
   # print session info for reproducibility
   tar_target(
     sessionInfo,
