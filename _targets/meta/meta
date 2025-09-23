@@ -2,7 +2,6 @@ name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iterat
 data_file|stem|314214595f3a0773|017b2253abfc9754|2c530c1562a7fbd1|-679625259|data/clean_data.csv|t20293.808849549s|s443097b|443097|file|local|vector|||0||
 data|stem|bad71fa6d7707ffd|237276f659722970|d7fd469be47aa633|33550471||t20301.3690330672s|s52890b|52890|rds|local|vector|||0.641||
 plot_usage|stem|3bd240c37d1c6304|a33b9d88e6079b9b|95a4bedde38b02b4|563089675||t20301.3696173154s|s219514b|219514|rds|local|vector|||0.219|Removed 1 row containing missing values or values outside the scale range (`geom_col()`).|
-sessionInfo|stem|4d420e734d24941e|6f338939dd102f8f|2c530c1562a7fbd1|1164010252||t20301.3751831704s|s44b|44|rds|local|vector|||0.344|package 'tidyverse' was built under R version 4.4.3|
 plot_hist_AI.superintelligence|stem|a161b5455344e3e3|60d78e868337f985|9bb5b9d8bb9fbc33|-1258284305||t20321.3711202073s|s273900b|273900|rds|local|vector|||0.656|Removed 978 rows containing non-finite outside the scale range (`stat_count()`).|
 plot_hist_Audio.transcription.AI|stem|6b24e631d883eb49|507900e329b1d9bd|9bb5b9d8bb9fbc33|1662783264||t20321.3711267602s|s273003b|273003|rds|local|vector|||0.406|Removed 894 rows containing non-finite outside the scale range (`stat_count()`).|
 plot_hist_DeepSeek|stem|5c9121f5e191abff|31de611c512599ad|9bb5b9d8bb9fbc33|611673671||t20321.3711338322s|s277101b|277101|rds|local|vector|||0.421|Removed 1092 rows containing non-finite outside the scale range (`stat_count()`).|
@@ -103,10 +102,11 @@ plot_cor_AI.superintelligence|stem|14ca5febd7cc53d8|1a2e7c5cb6ba52c0|4d4c74a4ba9
 plot_cor_Robot.soldier|stem|19a375812c4f88dc|bc2c0a801ae9f0cf|4d4c74a4ba9efcf7|-240550498||t20350.4403100096s|s226685b|226685|rds|local|vector|||0.453||
 plot_cor_Robot.vacuum|stem|b5481845743dec3a|7f03a02d629505c3|4d4c74a4ba9efcf7|1883420124||t20350.4403170082s|s226694b|226694|rds|local|vector|||0.172||
 plot_cor_AI.therapist|stem|3bb16a08af6536fc|e75e656a7bee712f|4d4c74a4ba9efcf7|-1856585750||t20350.4403295472s|s226695b|226695|rds|local|vector|||0.531||
+summary|stem|339f758ce588a2b5|0b49adbde6c0e05c|31714b2d2129529a|-1884548258|quarto/summary/summary.html*quarto/summary/summary.qmd|t20354.4508295362s|s2256801b|2256801|file|local|vector|||72.703||
 extract_slope_sd|function|0fb2b82858c5542b
 plot_correlations|function|cfac5ae33e77a3f1
 fit_model0|function|a0608a8b212f461b
-.Random.seed|object|aa7bc9d2858cd556
+.Random.seed|object|dee5488d7b064405
 fit_model1|function|843f73ecc876a9d8
 plot_model0|function|461b4f7df6252e1c
 plot_model1|function|a04f8d1d7dc1ef94
@@ -114,4 +114,4 @@ load_data|function|748a15238dcb5e12
 plot_slope_sd|function|7bb654bec3f0b56b
 plot_histograms|function|6ee42f871a4d27d0
 plot_AI_usage|function|8076150adba5918e
-summary|stem|339f758ce588a2b5|0b49adbde6c0e05c|31714b2d2129529a|-1884548258|quarto/summary/summary.html*quarto/summary/summary.qmd|t20354.4508295362s|s2256801b|2256801|file|local|vector|||72.703||
+sessionInfo|stem|4d420e734d24941e|6f338939dd102f8f|2c530c1562a7fbd1|1164010252||t20354.4631202985s|s44b|44|rds|local|vector|||5.688|package 'brms' was built under R version 4.4.3|

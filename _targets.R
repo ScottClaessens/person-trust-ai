@@ -3,7 +3,7 @@ library(tarchetypes)
 library(tidyverse)
 
 # load packages and scripts
-tar_option_set(packages = c("brms", "Hmisc", "tidybayes", "tidyverse"))
+tar_option_set(packages = c("brms", "tidybayes", "tidyverse"))
 tar_source()
 
 # pipeline
