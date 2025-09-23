@@ -106,7 +106,7 @@ plot_cor_AI.therapist|stem|3bb16a08af6536fc|e75e656a7bee712f|4d4c74a4ba9efcf7|-1
 extract_slope_sd|function|0fb2b82858c5542b
 plot_correlations|function|cfac5ae33e77a3f1
 fit_model0|function|a0608a8b212f461b
-.Random.seed|object|3d4b30f6cb1ccca2
+.Random.seed|object|aa7bc9d2858cd556
 fit_model1|function|843f73ecc876a9d8
 plot_model0|function|461b4f7df6252e1c
 plot_model1|function|a04f8d1d7dc1ef94
@@ -114,4 +114,4 @@ load_data|function|748a15238dcb5e12
 plot_slope_sd|function|7bb654bec3f0b56b
 plot_histograms|function|6ee42f871a4d27d0
 plot_AI_usage|function|8076150adba5918e
-summary|stem|f745d107f2729391|e3562f31cfc9501c|428e7cb6f9252dd3|-1884548258|quarto/summary/summary.html*quarto/summary/summary.qmd|t20350.4610105114s|s1474394b|1474394|file|local|vector|||25.125||
+summary|stem|339f758ce588a2b5|0b49adbde6c0e05c|31714b2d2129529a|-1884548258|quarto/summary/summary.html*quarto/summary/summary.qmd|t20354.4508295362s|s2256801b|2256801|file|local|vector|||72.703||

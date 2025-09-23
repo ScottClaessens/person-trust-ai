@@ -22,15 +22,15 @@ library(tidyverse)
 This document summarises the preliminary results of our study on the predictors
 of trust in artificial intelligence systems.
 
-We recruited 800 participants (N = 690 after exclusions for low Captcha scores
-and failed attention check) from Prolific. In the study, participants answered
-questions about both "general AI" and a random subset of specific AI systems (5 
-out of 20). In each case, we asked participants how much they trusted the system
-and various other questions, including perceived reliability, competence,
-genuine nature, ethicality, autonomy, potential for good, potential for harm,
-interpretability, explainability, anthropomorphism, and predictability. We also
-collected data on whether participants had heard of and used the different AI
-systems.
+We recruited 800 participants from the UK (N = 690 after exclusions for low 
+Captcha scores and failed attention check) from Prolific. In the study, 
+participants answered questions about both "general AI" and a random subset of 
+specific AI systems (5 out of 20). In each case, we asked participants how much
+they trusted the system and various other questions, including perceived 
+reliability, competence, genuine nature, ethicality, autonomy, potential for 
+good, potential for harm, interpretability, explainability, anthropomorphism, 
+and predictability. We also collected data on whether participants had heard of
+and used the different AI systems.
 
 Data and code for the study can be found here:
 <https://github.com/ScottClaessens/person-trust-AI>
@@ -48,7 +48,7 @@ We found that some AI systems were more familiar to participants than others.
 tar_read(plot_usage)
 ```
 
-## Reported trust in different AI systems
+## Rankings for different AI systems
 
 We ranked average ratings of trust for "general AI" and the different AI 
 systems. The results show that participants trust some AI systems more than
@@ -62,6 +62,140 @@ others, with "general AI" sitting somewhere in the middle.
 
 tar_read(plot0_trust)
 ```
+
+Rankings for other variables can be displayed below:
+
+<details>
+<summary>Reliable</summary>
+```{r}
+#| label: fig-reliable-ranking
+#| fig-cap: "Perceived reliability of different AI systems"
+#| out-width: "100%"
+#| out-height: "80%"
+
+tar_read(plot0_reliable)
+```
+</details>
+
+<details>
+<summary>Competent</summary>
+```{r}
+#| label: fig-competent-ranking
+#| fig-cap: "Perceived competence of different AI systems"
+#| out-width: "100%"
+#| out-height: "80%"
+
+tar_read(plot0_competent)
+```
+</details>
+
+<details>
+<summary>Genuine</summary>
+```{r}
+#| label: fig-genuine-ranking
+#| fig-cap: "Perceived genuine nature of different AI systems"
+#| out-width: "100%"
+#| out-height: "80%"
+
+tar_read(plot0_genuine)
+```
+</details>
+
+<details>
+<summary>Ethical</summary>
+```{r}
+#| label: fig-ethical-ranking
+#| fig-cap: "Perceived ethicality of different AI systems"
+#| out-width: "100%"
+#| out-height: "80%"
+
+tar_read(plot0_ethical)
+```
+</details>
+
+<details>
+<summary>Autonomy</summary>
+```{r}
+#| label: fig-autonomy-ranking
+#| fig-cap: "Perceived autonomy of different AI systems"
+#| out-width: "100%"
+#| out-height: "80%"
+
+tar_read(plot0_autonomy)
+```
+</details>
+
+<details>
+<summary>Potential good</summary>
+```{r}
+#| label: fig-potential-good-ranking
+#| fig-cap: "Perceived 'potential good' of different AI systems"
+#| out-width: "100%"
+#| out-height: "80%"
+
+tar_read(plot0_potential_good)
+```
+</details>
+
+<details>
+<summary>Potential harm</summary>
+```{r}
+#| label: fig-potential-harm-ranking
+#| fig-cap: "Perceived 'potential harm' of different AI systems"
+#| out-width: "100%"
+#| out-height: "80%"
+
+tar_read(plot0_potential_harm)
+```
+</details>
+
+<details>
+<summary>Interpretability</summary>
+```{r}
+#| label: fig-interpretability-ranking
+#| fig-cap: "Perceived interpretability of different AI systems"
+#| out-width: "100%"
+#| out-height: "80%"
+
+tar_read(plot0_interpretability)
+```
+</details>
+
+<details>
+<summary>Explainability</summary>
+```{r}
+#| label: fig-explainability-ranking
+#| fig-cap: "Perceived explainability of different AI systems"
+#| out-width: "100%"
+#| out-height: "80%"
+
+tar_read(plot0_explainability)
+```
+</details>
+
+<details>
+<summary>Humanlike</summary>
+```{r}
+#| label: fig-humanlike-ranking
+#| fig-cap: "Perceived anthropomorphism of different AI systems"
+#| out-width: "100%"
+#| out-height: "80%"
+
+tar_read(plot0_humanlike)
+```
+</details>
+
+<details>
+<summary>Predictability</summary>
+```{r}
+#| label: fig-predictability-ranking
+#| fig-cap: "Perceived predictability of different AI systems"
+#| out-width: "100%"
+#| out-height: "80%"
+
+tar_read(plot0_predictability)
+```
+</details>
 
 ## Predictors of trust in general AI
 
@@ -127,6 +261,116 @@ different AI systems -- though the effect is still positive for all AI systems.
 
 tar_read(plot1_competent)
 ```
+
+Plots for all other predictors of trust can be displayed below:
+
+<details>
+<summary>Reliable</summary>
+```{r}
+#| label: fig-reliable
+#| fig-cap: "Effect of reliability on trust across different AI systems"
+#| out-width: "100%"
+#| out-height: "83%"
+
+tar_read(plot1_reliable)
+```
+</details>
+
+<details>
+<summary>Genuine</summary>
+```{r}
+#| label: fig-genuine
+#| fig-cap: "Effect of 'genuine' on trust across different AI systems"
+#| out-width: "100%"
+#| out-height: "83%"
+
+tar_read(plot1_genuine)
+```
+</details>
+
+<details>
+<summary>Ethical</summary>
+```{r}
+#| label: fig-ethical
+#| fig-cap: "Effect of ethicality on trust across different AI systems"
+#| out-width: "100%"
+#| out-height: "83%"
+
+tar_read(plot1_ethical)
+```
+</details>
+
+<details>
+<summary>Autonomy</summary>
+```{r}
+#| label: fig-autonomy
+#| fig-cap: "Effect of autonomy on trust across different AI systems"
+#| out-width: "100%"
+#| out-height: "83%"
+
+tar_read(plot1_autonomy)
+```
+</details>
+
+<details>
+<summary>Potential good</summary>
+```{r}
+#| label: fig-potential-good
+#| fig-cap: "Effect of potential good on trust across different AI systems"
+#| out-width: "100%"
+#| out-height: "83%"
+
+tar_read(plot1_potential_good)
+```
+</details>
+
+<details>
+<summary>Potential harm</summary>
+```{r}
+#| label: fig-potential-harm
+#| fig-cap: "Effect of potential harm on trust across different AI systems"
+#| out-width: "100%"
+#| out-height: "83%"
+
+tar_read(plot1_potential_harm)
+```
+</details>
+
+<details>
+<summary>Explainability</summary>
+```{r}
+#| label: fig-explainability
+#| fig-cap: "Effect of explainability on trust across different AI systems"
+#| out-width: "100%"
+#| out-height: "83%"
+
+tar_read(plot1_explainability)
+```
+</details>
+
+<details>
+<summary>Humanlike</summary>
+```{r}
+#| label: fig-humanlike
+#| fig-cap: "Effect of anthropomorphism on trust across different AI systems"
+#| out-width: "100%"
+#| out-height: "83%"
+
+tar_read(plot1_humanlike)
+```
+</details>
+
+<details>
+<summary>Predictability</summary>
+```{r}
+#| label: fig-predictability
+#| fig-cap: "Effect of predictability on trust across different AI systems"
+#| out-width: "100%"
+#| out-height: "83%"
+
+tar_read(plot1_predictability)
+```
+</details>
 
 ## Future directions
 
