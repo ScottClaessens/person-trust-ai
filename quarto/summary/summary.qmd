@@ -3,10 +3,7 @@ title: "Predictors of Trust in AI"
 subtitle: "Summary of Preliminary Results"
 author: "Scott Claessens"
 date: "`{r} Sys.Date()`"
-format:
-  html:
-    html-table-processing: none
-    embed-resources: true
+format: docx
 toc: true
 execute:
   echo: false
@@ -63,10 +60,8 @@ others, with "general AI" sitting somewhere in the middle.
 tar_read(plot0_trust)
 ```
 
-Rankings for other variables can be displayed below:
+Rankings for other variables are below:
 
-<details>
-<summary>Reliable</summary>
 ```{r}
 #| label: fig-reliable-ranking
 #| fig-cap: "Perceived reliability of different AI systems"
@@ -75,10 +70,7 @@ Rankings for other variables can be displayed below:
 
 tar_read(plot0_reliable)
 ```
-</details>
 
-<details>
-<summary>Competent</summary>
 ```{r}
 #| label: fig-competent-ranking
 #| fig-cap: "Perceived competence of different AI systems"
@@ -87,10 +79,7 @@ tar_read(plot0_reliable)
 
 tar_read(plot0_competent)
 ```
-</details>
 
-<details>
-<summary>Genuine</summary>
 ```{r}
 #| label: fig-genuine-ranking
 #| fig-cap: "Perceived genuine nature of different AI systems"
@@ -99,10 +88,7 @@ tar_read(plot0_competent)
 
 tar_read(plot0_genuine)
 ```
-</details>
 
-<details>
-<summary>Ethical</summary>
 ```{r}
 #| label: fig-ethical-ranking
 #| fig-cap: "Perceived ethicality of different AI systems"
@@ -111,10 +97,7 @@ tar_read(plot0_genuine)
 
 tar_read(plot0_ethical)
 ```
-</details>
 
-<details>
-<summary>Autonomy</summary>
 ```{r}
 #| label: fig-autonomy-ranking
 #| fig-cap: "Perceived autonomy of different AI systems"
@@ -123,10 +106,7 @@ tar_read(plot0_ethical)
 
 tar_read(plot0_autonomy)
 ```
-</details>
 
-<details>
-<summary>Potential good</summary>
 ```{r}
 #| label: fig-potential-good-ranking
 #| fig-cap: "Perceived 'potential good' of different AI systems"
@@ -135,10 +115,7 @@ tar_read(plot0_autonomy)
 
 tar_read(plot0_potential_good)
 ```
-</details>
 
-<details>
-<summary>Potential harm</summary>
 ```{r}
 #| label: fig-potential-harm-ranking
 #| fig-cap: "Perceived 'potential harm' of different AI systems"
@@ -147,10 +124,7 @@ tar_read(plot0_potential_good)
 
 tar_read(plot0_potential_harm)
 ```
-</details>
 
-<details>
-<summary>Interpretability</summary>
 ```{r}
 #| label: fig-interpretability-ranking
 #| fig-cap: "Perceived interpretability of different AI systems"
@@ -159,10 +133,7 @@ tar_read(plot0_potential_harm)
 
 tar_read(plot0_interpretability)
 ```
-</details>
 
-<details>
-<summary>Explainability</summary>
 ```{r}
 #| label: fig-explainability-ranking
 #| fig-cap: "Perceived explainability of different AI systems"
@@ -171,10 +142,7 @@ tar_read(plot0_interpretability)
 
 tar_read(plot0_explainability)
 ```
-</details>
 
-<details>
-<summary>Humanlike</summary>
 ```{r}
 #| label: fig-humanlike-ranking
 #| fig-cap: "Perceived anthropomorphism of different AI systems"
@@ -183,10 +151,7 @@ tar_read(plot0_explainability)
 
 tar_read(plot0_humanlike)
 ```
-</details>
 
-<details>
-<summary>Predictability</summary>
 ```{r}
 #| label: fig-predictability-ranking
 #| fig-cap: "Perceived predictability of different AI systems"
@@ -195,7 +160,6 @@ tar_read(plot0_humanlike)
 
 tar_read(plot0_predictability)
 ```
-</details>
 
 ## Predictors of trust in general AI
 
@@ -239,19 +203,20 @@ tar_read(plot_slope_sds)
 ```
 
 This plot suggests that, for example, the effect of interpretability on trust
-does not vary much across different AI systems.
+does not vary much across different AI systems. On the other hand, the effect of 
+competence on trust varies much more across different AI systems. These effects
+are shown in the plots below.
+
+Plots for all other predictors of trust are displayed below:
 
 ```{r}
-#| label: fig-interpretability
-#| fig-cap: "Effect of interpretability on trust across different AI systems"
+#| label: fig-reliable
+#| fig-cap: "Effect of reliability on trust across different AI systems"
 #| out-width: "100%"
 #| out-height: "83%"
 
-tar_read(plot1_interpretability)
+tar_read(plot1_reliable)
 ```
-
-On the other hand, the effect of competence on trust varies much more across
-different AI systems -- though the effect is still positive for all AI systems.
 
 ```{r}
 #| label: fig-competence
@@ -262,22 +227,6 @@ different AI systems -- though the effect is still positive for all AI systems.
 tar_read(plot1_competent)
 ```
 
-Plots for all other predictors of trust can be displayed below:
-
-<details>
-<summary>Reliable</summary>
-```{r}
-#| label: fig-reliable
-#| fig-cap: "Effect of reliability on trust across different AI systems"
-#| out-width: "100%"
-#| out-height: "83%"
-
-tar_read(plot1_reliable)
-```
-</details>
-
-<details>
-<summary>Genuine</summary>
 ```{r}
 #| label: fig-genuine
 #| fig-cap: "Effect of 'genuine' on trust across different AI systems"
@@ -286,10 +235,7 @@ tar_read(plot1_reliable)
 
 tar_read(plot1_genuine)
 ```
-</details>
 
-<details>
-<summary>Ethical</summary>
 ```{r}
 #| label: fig-ethical
 #| fig-cap: "Effect of ethicality on trust across different AI systems"
@@ -298,10 +244,7 @@ tar_read(plot1_genuine)
 
 tar_read(plot1_ethical)
 ```
-</details>
 
-<details>
-<summary>Autonomy</summary>
 ```{r}
 #| label: fig-autonomy
 #| fig-cap: "Effect of autonomy on trust across different AI systems"
@@ -310,10 +253,7 @@ tar_read(plot1_ethical)
 
 tar_read(plot1_autonomy)
 ```
-</details>
 
-<details>
-<summary>Potential good</summary>
 ```{r}
 #| label: fig-potential-good
 #| fig-cap: "Effect of potential good on trust across different AI systems"
@@ -322,10 +262,7 @@ tar_read(plot1_autonomy)
 
 tar_read(plot1_potential_good)
 ```
-</details>
 
-<details>
-<summary>Potential harm</summary>
 ```{r}
 #| label: fig-potential-harm
 #| fig-cap: "Effect of potential harm on trust across different AI systems"
@@ -334,10 +271,16 @@ tar_read(plot1_potential_good)
 
 tar_read(plot1_potential_harm)
 ```
-</details>
 
-<details>
-<summary>Explainability</summary>
+```{r}
+#| label: fig-interpretability
+#| fig-cap: "Effect of interpretability on trust across different AI systems"
+#| out-width: "100%"
+#| out-height: "83%"
+
+tar_read(plot1_interpretability)
+```
+
 ```{r}
 #| label: fig-explainability
 #| fig-cap: "Effect of explainability on trust across different AI systems"
@@ -346,10 +289,7 @@ tar_read(plot1_potential_harm)
 
 tar_read(plot1_explainability)
 ```
-</details>
 
-<details>
-<summary>Humanlike</summary>
 ```{r}
 #| label: fig-humanlike
 #| fig-cap: "Effect of anthropomorphism on trust across different AI systems"
@@ -358,10 +298,7 @@ tar_read(plot1_explainability)
 
 tar_read(plot1_humanlike)
 ```
-</details>
 
-<details>
-<summary>Predictability</summary>
 ```{r}
 #| label: fig-predictability
 #| fig-cap: "Effect of predictability on trust across different AI systems"
@@ -370,7 +307,6 @@ tar_read(plot1_humanlike)
 
 tar_read(plot1_predictability)
 ```
-</details>
 
 ## Future directions
 
