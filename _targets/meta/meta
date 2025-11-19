@@ -1,7 +1,39 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+sessionInfo|stem|4d420e734d24941e|6f338939dd102f8f|2c530c1562a7fbd1|1164010252||t20411.495266484s|s44b|44|rds|local|vector|||8.015|package 'brms' was built under R version 4.4.3. package 'mice' was built under R version 4.4.3|
 data_file|stem|314214595f3a0773|017b2253abfc9754|2c530c1562a7fbd1|-679625259|data/clean_data.csv|t20293.808849549s|s443097b|443097|file|local|vector|||0||
-data|stem|bad71fa6d7707ffd|237276f659722970|d7fd469be47aa633|33550471||t20301.3690330672s|s52890b|52890|rds|local|vector|||0.641||
-plot_usage|stem|3bd240c37d1c6304|a33b9d88e6079b9b|95a4bedde38b02b4|563089675||t20301.3696173154s|s219514b|219514|rds|local|vector|||0.219|Removed 1 row containing missing values or values outside the scale range (`geom_col()`).|
-sessionInfo|stem|4d420e734d24941e|6f338939dd102f8f|2c530c1562a7fbd1|1164010252||t20354.4631202985s|s44b|44|rds|local|vector|||5.688|package 'brms' was built under R version 4.4.3|
-load_data|function|748a15238dcb5e12
+data|stem|bad71fa6d7707ffd|237276f659722970|e1d593be08b94ab5|33550471||t20411.495293167s|s52890b|52890|rds|local|vector|||2.094||
+plot_usage|stem|b026d1370e547efa|a33b9d88e6079b9b|95a4bedde38b02b4|563089675||t20411.4954204279s|s219803b|219803|rds|local|vector|||1.969|Removed 1 row containing missing values or values outside the scale range (`geom_col()`).|
+data_imputed|stem|c7297849685212f6|16b1adeef8aa2cb5|1372446997087bb3|-304612476||t20411.5483090269s|s292065b|292065|rds|local|vector|||11.14|Number of logged events: 4. Number of logged events: 2|
+fit_baseline_humanlike|stem|ef34ddcdc2a6e8bd|d7c7f022e7153519|82117f459eb216b4|-1716983795||t20411.5553006597s|s67958200b|67958200|rds|local|vector|||361.859|Rows containing NAs were excluded from the model.|
+fit_baseline_ethical|stem|f77c6f966ec98163|04b2290a07e6adc3|82117f459eb216b4|-486766726||t20411.5597154857s|s67966586b|67966586|rds|local|vector|||377.922|Rows containing NAs were excluded from the model.|
+fit_baseline_potential_harm|stem|9a88e8e5b8584e98|a41ea967698f26b1|82117f459eb216b4|-296985496||t20411.5650366302s|s67920781b|67920781|rds|local|vector|||456.094|Rows containing NAs were excluded from the model.|
+fit_baseline_interpretability|stem|879547a9d602bb6a|d61a8f025d345867|82117f459eb216b4|208626952||t20411.5708976256s|s68217199b|68217199|rds|local|vector|||502.297|Rows containing NAs were excluded from the model.|
+fit_baseline_predictability|stem|05265b00e9e3fe05|83668cb01b085390|82117f459eb216b4|956918525||t20411.5752222115s|s68094145b|68094145|rds|local|vector|||370.079|Rows containing NAs were excluded from the model.|
+fit_baseline_competent|stem|26c07c64a7c95072|6413cadb855c0668|82117f459eb216b4|-864174307||t20411.5812777376s|s68105661b|68105661|rds|local|vector|||519.359|Rows containing NAs were excluded from the model.|
+fit_baseline_potential_good|stem|986dc4a22ec76bad|021c94164d605bea|82117f459eb216b4|-515492550||t20411.5857140064s|s68087368b|68087368|rds|local|vector|||379.766|Rows containing NAs were excluded from the model.|
+fit_baseline_reliable|stem|138f16bfe626930b|f31d35b881104381|82117f459eb216b4|1338912955||t20411.5901985365s|s68190754b|68190754|rds|local|vector|||384.109|Rows containing NAs were excluded from the model.|
+fit_baseline_trust|stem|c6f5c9b0c82d667c|e8d48b45b8615fad|82117f459eb216b4|1399472824||t20411.5994341656s|s67932977b|67932977|rds|local|vector|||794.344||
+fit_baseline_genuine|stem|fd883fe53ba4707d|076b14c617b2f89f|82117f459eb216b4|635435681||t20411.6051847955s|s68262486b|68262486|rds|local|vector|||493.156|Rows containing NAs were excluded from the model.|
+fit_baseline_explainability|stem|5190edc68d162500|44d93a2935879563|82117f459eb216b4|-528128509||t20411.6094554548s|s68248756b|68248756|rds|local|vector|||365.328|Rows containing NAs were excluded from the model.|
+fit_baseline_autonomy|stem|9051e3c7c7d4cc18|4465b96eed5c11b7|82117f459eb216b4|1717107078||t20411.6136623126s|s68388821b|68388821|rds|local|vector|||359.547|Rows containing NAs were excluded from the model.|
+means_baseline_interpretability|stem|93bc1c622543919f|251dc277ec4c8d43|f719cb1791f7695d|1164888753||t20411.675332752s|s918928b|918928|rds|local|vector|||1.609||
+means_baseline_competent|stem|73a8f4ac2c0add09|3f88ced91ff02902|8bcc663e669b9c30|-1509903321||t20411.6753575336s|s908446b|908446|rds|local|vector|||0.75||
+means_baseline_trust|stem|9e69ef091d800d66|44ea54961b4e8e56|04f4d61ef51e4840|1467279828||t20411.6753865671s|s908655b|908655|rds|local|vector|||1.157||
+means_baseline_ethical|stem|c867a2b0ab0a3e5d|d56de2a00c540bb4|7a0652441b3c0cd4|-1636208761||t20411.6754091021s|s921571b|921571|rds|local|vector|||0.797||
+means_baseline_potential_harm|stem|5e31882c8e5bdaf6|28bd35b347d0744e|5006edd2f721beaa|-145383767||t20411.6754313677s|s916094b|916094|rds|local|vector|||1.015||
+means_baseline_autonomy|stem|205b651af8abc161|68cd08b22e8472f6|c31629c715ac90ff|445558673||t20411.6754546297s|s923310b|923310|rds|local|vector|||1.031||
+means_baseline_potential_good|stem|545f96301ab272c2|8336266fe2bf10ce|23056184aa0b9143|-2059042350||t20411.6754777528s|s913504b|913504|rds|local|vector|||1.125||
+means_baseline_humanlike|stem|a18aa5be1d28380e|bfb26eca9afd33f1|4f3c8e010e1281ad|-706740299||t20411.6754993641s|s926847b|926847|rds|local|vector|||0.953||
+means_baseline_genuine|stem|e2d3ea8632d2df52|5632b6f4810faea3|07740a65b17a8db9|-1619851177||t20411.6755228724s|s917538b|917538|rds|local|vector|||1.062||
+means_baseline_reliable|stem|951a08341c222c7f|9fce7f125e3cce01|0d5f16bf2841afe4|-1616285148||t20411.6755475469s|s911974b|911974|rds|local|vector|||1.188||
+means_baseline_explainability|stem|214d6df672a47a6c|291f6e0545f9ec74|f47bb992436cdcc7|-1392821456||t20411.675572193s|s921849b|921849|rds|local|vector|||1.172||
+means_baseline_predictability|stem|db0b7f1817695b0f|74888fbac725e759|7c51957c741e3650|549364829||t20411.6755953816s|s921079b|921079|rds|local|vector|||1.125||
+plot_diffs2|stem|8360b3d8aef844bb|f912506152f1810b|fab7dac33e250998|-1616824336||t20411.6930853245s|s3865371b|3865371|rds|local|vector|||0.516|Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0. ℹ Please use `linewidth` instead.|
+plot_diffs1|stem|f9f4fd047414d56f|7f1102806902d885|a2ff51a0fc462c5b|510629407||t20411.6930964806s|s4767066b|4767066|rds|local|vector|||0.328||
+plot_diffs3|stem|206a112daf5596a9|d13cd82908616179|b01691d124952fae|67126713||t20411.6931094776s|s4787611b|4787611|rds|local|vector|||0.469||
+fit_baseline_model|function|a0608a8b212f461b
+plot_mean_diffs_general_AI|function|0a6c6eb4171538f1
+impute_data|function|afdf12ae6c7ba1d3
+load_data|function|f1fffdb4b5ebdaa3
+extract_means_baseline|function|cb4f144ff8308c1a
 plot_AI_usage|function|8076150adba5918e

@@ -4,7 +4,7 @@ load_data <- function(data_file) {
     file = data_file,
     show_col_types = FALSE
   ) |>
-    filter(captcha >= 0.5) |>
-    filter(attention == "TikTok") |>
+    # apply exclusion criteria
+    filter(captcha >= 0.5 & attention == "TikTok") |>
     select(!c(captcha, attention))
 }
