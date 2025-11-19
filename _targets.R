@@ -17,7 +17,7 @@ list(
   tar_target(data_file, "data/clean_data.csv", format = "file"),
   tar_target(data, load_data(data_file)),
   # impute missing data using mice
-  tar_target(data_imputed, impute_data(data)),
+  tar_target(data_imputed, impute_data(data, m = 5)),
   # plot AI usage
   tar_target(plot_usage, plot_AI_usage(data)),
   
@@ -74,6 +74,15 @@ list(
       limits = c(-3.5, 3.5)
     )
   ),
+  
+  #### Fit regression models predicting trust ####
+  
+  # model 1 - performance and morality
+  tar_target(
+    fit_regression_model1,
+    fit_regression_model(data_imputed, predictors = "performance + moral")
+  ),
+  tar_target(plot_reg_model1, plot_regression_model1(fit_regression_model1)),
   
   #### Session info ####
   

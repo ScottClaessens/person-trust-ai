@@ -3,7 +3,6 @@ sessionInfo|stem|4d420e734d24941e|6f338939dd102f8f|2c530c1562a7fbd1|1164010252||
 data_file|stem|314214595f3a0773|017b2253abfc9754|2c530c1562a7fbd1|-679625259|data/clean_data.csv|t20293.808849549s|s443097b|443097|file|local|vector|||0||
 data|stem|bad71fa6d7707ffd|237276f659722970|e1d593be08b94ab5|33550471||t20411.495293167s|s52890b|52890|rds|local|vector|||2.094||
 plot_usage|stem|b026d1370e547efa|a33b9d88e6079b9b|95a4bedde38b02b4|563089675||t20411.4954204279s|s219803b|219803|rds|local|vector|||1.969|Removed 1 row containing missing values or values outside the scale range (`geom_col()`).|
-data_imputed|stem|c7297849685212f6|16b1adeef8aa2cb5|1372446997087bb3|-304612476||t20411.5483090269s|s292065b|292065|rds|local|vector|||11.14|Number of logged events: 4. Number of logged events: 2|
 fit_baseline_humanlike|stem|ef34ddcdc2a6e8bd|d7c7f022e7153519|82117f459eb216b4|-1716983795||t20411.5553006597s|s67958200b|67958200|rds|local|vector|||361.859|Rows containing NAs were excluded from the model.|
 fit_baseline_ethical|stem|f77c6f966ec98163|04b2290a07e6adc3|82117f459eb216b4|-486766726||t20411.5597154857s|s67966586b|67966586|rds|local|vector|||377.922|Rows containing NAs were excluded from the model.|
 fit_baseline_potential_harm|stem|9a88e8e5b8584e98|a41ea967698f26b1|82117f459eb216b4|-296985496||t20411.5650366302s|s67920781b|67920781|rds|local|vector|||456.094|Rows containing NAs were excluded from the model.|
@@ -31,9 +30,14 @@ means_baseline_predictability|stem|db0b7f1817695b0f|74888fbac725e759|7c51957c741
 plot_diffs2|stem|8360b3d8aef844bb|f912506152f1810b|fab7dac33e250998|-1616824336||t20411.6930853245s|s3865371b|3865371|rds|local|vector|||0.516|Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0. ℹ Please use `linewidth` instead.|
 plot_diffs1|stem|f9f4fd047414d56f|7f1102806902d885|a2ff51a0fc462c5b|510629407||t20411.6930964806s|s4767066b|4767066|rds|local|vector|||0.328||
 plot_diffs3|stem|206a112daf5596a9|d13cd82908616179|b01691d124952fae|67126713||t20411.6931094776s|s4787611b|4787611|rds|local|vector|||0.469||
+data_imputed|stem|c0328ff74e19cb70|1b0e57aa577534c4|aab1a528a9660019|-304612476||t20411.7594576425s|s210936b|210936|rds|local|vector|||8.219|Number of logged events: 4. Number of logged events: 2|
+fit_regression_model1|stem|0f91a52135dcc8c2|f06cb37284e990b2|c07e1bfae86b6ea7|303769788||t20411.8060713097s|s178127959b|178127959|rds|local|vector|||1847.485||
+plot_reg_model1|stem|8a08ddb2196d8e94|fb3c4fb03202246a|421da547bcdd15b5|-1715866509||t20411.8544572856s|s295587016b|295587016|rds|local|vector|||4.61|Vectorized input to `element_text()` is not officially supported. ℹ Results may be unexpected or may change in future versions of ggplot2.. Using the `size` aesthetic with geom_segment was deprecated in ggplot2 3.4.0. ℹ Please use the `linewidth` aesthetic instead.|
 fit_baseline_model|function|a0608a8b212f461b
 plot_mean_diffs_general_AI|function|0a6c6eb4171538f1
-impute_data|function|afdf12ae6c7ba1d3
+impute_data|function|ebaea23b0794d125
 load_data|function|f1fffdb4b5ebdaa3
+plot_regression_model1|function|c8a5701664b3bfbb
 extract_means_baseline|function|cb4f144ff8308c1a
+fit_regression_model|function|3e01b71284a9edbb
 plot_AI_usage|function|8076150adba5918e
