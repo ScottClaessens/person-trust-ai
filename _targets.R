@@ -4,7 +4,8 @@ library(tidyverse)
 
 # load packages and scripts
 tar_option_set(
-  packages = c("brms", "future", "mice", "tidybayes", "tidyverse")
+  packages = c("brms", "future", "mice", "patchwork", 
+               "tidybayes", "tidyverse")
 )
 tar_source()
 
@@ -83,6 +84,28 @@ list(
     fit_regression_model(data_imputed, predictors = "performance + moral")
   ),
   tar_target(plot_reg_model1, plot_regression_model1(fit_regression_model1)),
+  # model 2 - include moderators
+  tar_map(
+    values = list(
+      moderator = c("autonomy", "potential_harm",
+                    "interpretability", "humanlike")
+    ),
+    tar_target(
+      fit_regression_model2,
+      fit_regression_model(
+        data_imputed,
+        predictors = paste0(
+          "performance + moral + ", moderator,
+          " + performance*", moderator,
+          " + moral*", moderator
+        )
+      )
+    ),
+    tar_target(
+      plot_reg_model2,
+      plot_regression_moderators(fit_regression_model2, moderator)
+    )
+  ),
   
   #### Session info ####
   
