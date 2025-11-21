@@ -44,9 +44,11 @@ plot_reg_model2_autonomy|stem|d87d3901dbc5119c|e9dbb61d3af9a2cd|f95916249ea60759
 fit_baseline_model|function|a0608a8b212f461b
 plot_mean_diffs_general_AI|function|0a6c6eb4171538f1
 plot_regression_moderators|function|1b506f56437573b7
+plot_correlations|function|3fc45d0fe81a082d
 impute_data|function|ebaea23b0794d125
 load_data|function|f1fffdb4b5ebdaa3
 plot_regression_model1|function|c8a5701664b3bfbb
 extract_means_baseline|function|cb4f144ff8308c1a
 fit_regression_model|function|3e01b71284a9edbb
 plot_AI_usage|function|8076150adba5918e
+plot_cors|stem|36b3c729514ae2cd|56bcf1828f1e969e|a800127b77c99a1c|-727877256||t20413.4830352019s|s225084b|225084|rds|local|vector|||0.234||

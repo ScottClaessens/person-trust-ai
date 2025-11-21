@@ -21,6 +21,8 @@ list(
   tar_target(data_imputed, impute_data(data, m = 5)),
   # plot AI usage
   tar_target(plot_usage, plot_AI_usage(data)),
+  # plot correlations for general AI
+  tar_target(plot_cors, plot_correlations(data)),
   
   #### Baseline intercept-only models ####
   
