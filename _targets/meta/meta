@@ -41,6 +41,9 @@ plot_reg_model2_potential_harm|stem|e1be4a1887e772be|a0b796b21a16008d|69ce839da6
 plot_reg_model2_humanlike|stem|1d9556f1c0000b35|018f5ada401415a5|8c33881dd6736ba6|1595441017||t20413.4391744902s|s197709728b|197709728|rds|local|vector|||10.609|Predictions are treated as continuous variables in 'conditional_effects' by default which is likely invalid for ordinal families. Please set 'categorical' to TRUE.. Predictions are treated as continuous variables in 'conditional_effects' by default which is likely invalid for ordinal families. Please set 'categorical' to TRUE.|
 plot_reg_model2_interpretability|stem|84d2ac377ccaa7df|6c39ee04ed6db898|74164e0c0a56e935|-1497253790||t20413.4394148805s|s197573312b|197573312|rds|local|vector|||10.703|Predictions are treated as continuous variables in 'conditional_effects' by default which is likely invalid for ordinal families. Please set 'categorical' to TRUE.. Predictions are treated as continuous variables in 'conditional_effects' by default which is likely invalid for ordinal families. Please set 'categorical' to TRUE.|
 plot_reg_model2_autonomy|stem|d87d3901dbc5119c|e9dbb61d3af9a2cd|f95916249ea60759|1732139488||t20413.4397238927s|s197812157b|197812157|rds|local|vector|||14.453|Predictions are treated as continuous variables in 'conditional_effects' by default which is likely invalid for ordinal families. Please set 'categorical' to TRUE.. Predictions are treated as continuous variables in 'conditional_effects' by default which is likely invalid for ordinal families. Please set 'categorical' to TRUE.|
+plot_cors|stem|36b3c729514ae2cd|56bcf1828f1e969e|a800127b77c99a1c|-727877256||t20413.4830352019s|s225084b|225084|rds|local|vector|||0.234||
+fit_regression_model2_predictability|stem|be637d2e1fd82a08|eda4eb1f31e960ea|c07e1bfae86b6ea7|-1461412642||t20413.553306245s|s196946320b|196946320|rds|local|vector|||5139.422||
+plot_reg_model2_predictability|stem|c186cf84cab5732c|95be1793e915cbae|13abd85573632adb|-344549638||t20413.5540559933s|s197695258b|197695258|rds|local|vector|||41.547|Predictions are treated as continuous variables in 'conditional_effects' by default which is likely invalid for ordinal families. Please set 'categorical' to TRUE.. Predictions are treated as continuous variables in 'conditional_effects' by default which is likely invalid for ordinal families. Please set 'categorical' to TRUE.|
 fit_baseline_model|function|a0608a8b212f461b
 plot_mean_diffs_general_AI|function|0a6c6eb4171538f1
 plot_regression_moderators|function|1b506f56437573b7
@@ -51,4 +54,3 @@ plot_regression_model1|function|c8a5701664b3bfbb
 extract_means_baseline|function|cb4f144ff8308c1a
 fit_regression_model|function|3e01b71284a9edbb
 plot_AI_usage|function|8076150adba5918e
-plot_cors|stem|36b3c729514ae2cd|56bcf1828f1e969e|a800127b77c99a1c|-727877256||t20413.4830352019s|s225084b|225084|rds|local|vector|||0.234||

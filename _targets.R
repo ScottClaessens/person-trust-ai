@@ -89,8 +89,8 @@ list(
   # model 2 - include moderators
   tar_map(
     values = list(
-      moderator = c("autonomy", "potential_harm",
-                    "interpretability", "humanlike")
+      moderator = c("autonomy", "potential_harm", "interpretability", 
+                    "humanlike", "predictability")
     ),
     tar_target(
       fit_regression_model2,
