@@ -8,12 +8,21 @@ plot_correlations <- function(data, AI_type = "General AI") {
     cor(use = "pairwise")
   cor_matrix[lower.tri(cor_matrix)] <- NA
   diag(cor_matrix) <- NA
+  # get p-value matrix (with bonferonni adjustment)
+  p_matrix <-
+    data %>%
+    filter(type == AI_type) %>%
+    dplyr::select(trust:predictability) %>%
+    psych::corr.test(use = "pairwise", adjust = "bonferroni")
+  p_matrix <- p_matrix$p
+  p_matrix[lower.tri(p_matrix)] <- NA
+  diag(p_matrix) <- NA
   # function to convert variable names
   convert_names <- function(x) {
     str_to_sentence(str_replace_all(x, "_", " "))
   }
   # wrangle data and plot
-  p <-
+  cor <-
     cor_matrix %>%
     as_tibble(rownames = "x") %>%
     pivot_longer(
@@ -32,17 +41,57 @@ plot_correlations <- function(data, AI_type = "General AI") {
           )
         }
       )
+    )
+  p_value <-
+    p_matrix %>%
+    as_tibble(rownames = "x") %>%
+    pivot_longer(
+      cols = !x,
+      names_to = "y",
+      values_to = "p"
     ) %>%
-    ggplot(
-      aes(
+    drop_na() %>%
+    mutate(
+      across(
+        c(x, y),
+        function(x) {
+          factor(
+            convert_names(x),
+            levels = convert_names(rownames(cor_matrix))
+          )
+        }
+      )
+    )
+  d <-
+    left_join(cor, p_value, by = c("x", "y")) %>%
+    mutate(sig = p < 0.05)
+  p <-
+    ggplot() +
+    geom_tile(
+      data = d,
+      mapping = aes(
         x = x,
         y = fct_rev(y),
-        fill = cor,
-        label = format(round(cor, 2), nsmall = 2)
+        fill = cor
       )
     ) +
-    geom_tile() +
-    geom_text(size = 2) +
+    geom_text(
+      data = d,
+      mapping = aes(
+        x = x,
+        y = fct_rev(y),
+        label = format(round(cor, 2), nsmall = 2)
+      ),
+      size = 2) +
+    geom_point(
+      data = filter(d, !sig),
+      mapping = aes(
+        x = x,
+        y = fct_rev(y)
+      ),
+      pch = 4,
+      size = 5
+    ) +
     scale_fill_gradient2(
       name = NULL,
       low = "blue",

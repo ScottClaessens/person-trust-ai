@@ -4,7 +4,7 @@ library(tidyverse)
 
 # load packages and scripts
 tar_option_set(
-  packages = c("brms", "future", "mice", "patchwork", 
+  packages = c("brms", "future", "mice", "patchwork", "psych",
                "tidybayes", "tidyverse")
 )
 tar_source()
