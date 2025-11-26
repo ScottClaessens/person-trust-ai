@@ -14,11 +14,11 @@ plot_regression_model1 <- function(fit) {
   p <- 
     # get in tibble
     tibble(
-      type               = c("Overall", colnames(r$type)),
+      type               = c(colnames(r$type)),
       fixed_performance  = list(as.vector(f[, "performance"])),
       fixed_moral        = list(as.vector(f[, "moral"])),
-      random_performance = c(0, lapply(1:21, \(i) r$type[, i, "performance"])),
-      random_moral       = c(0, lapply(1:21, \(i) r$type[, i, "moral"]))
+      random_performance = c(lapply(1:21, \(i) r$type[, i, "performance"])),
+      random_moral       = c(lapply(1:21, \(i) r$type[, i, "moral"]))
     ) |>
     # calculate slopes and differences
     rowwise() |>
@@ -37,12 +37,27 @@ plot_regression_model1 <- function(fit) {
     ) |>
     unnest(c(post)) |>
     mutate(parameter = factor(titles[parameter], levels = titles)) |>
+    # order y-axis
+    mutate(
+      type = factor(
+        type,
+        levels = c(
+          "Robot vacuum", "Google Maps AI", "Audio transcription AI",
+          "Apple's Siri", "Air traffic control AI", "Facial recognition AI",
+          "ChatGPT", "Skin cancer diagnosis app", "DALL-E", "Medical triage AI",
+          "Military cybersecurity AI", "Instagram filter", "AI therapist",
+          "Predictive policing algorithm", "Self-driving car",
+          "Predictive sentencing algorithm", "DeepSeek", "Robot soldier",
+          "AI superintelligence", "Autonomous killer drone", "General AI"
+        )
+      )
+    ) |>
     # plot
     ggplot(
       aes(
         x = post,
-        y = fct_relevel(fct_rev(type), "Overall"),
-        fill = as.character(type) == "Overall"
+        y = fct_rev(type),
+        fill = as.character(type) == "General AI"
       )
     ) +
     stat_dist_slabinterval() +
@@ -61,9 +76,7 @@ plot_regression_model1 <- function(fit) {
     theme_bw() +
     theme(
       legend.position = "none",
-      axis.text.y = element_text(
-        colour = c("red", rep("black", 21))
-      ),
+      axis.text.y = element_text(colour = c("red", rep("black", 21))),
       strip.placement = "outside",
       strip.background = element_blank(),
       strip.text = element_text(size = 11, vjust = 1),

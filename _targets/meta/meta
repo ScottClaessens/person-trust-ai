@@ -63,9 +63,9 @@ plot_regression_moderators|function|1b506f56437573b7
 plot_correlations|function|40ea14c3b128b2e6
 impute_data|function|ebaea23b0794d125
 load_data|function|f1fffdb4b5ebdaa3
-plot_regression_model1|function|6c4d6e1ec58b0eae
+plot_regression_model1|function|947931b63642af56
 extract_means_baseline|function|cb4f144ff8308c1a
 fit_regression_model|function|3e01b71284a9edbb
 plot_sd_pars|function|e6c9a157b9e2b119
 plot_AI_usage|function|8076150adba5918e
-plot_reg_model1|stem|896c5e4741d59477|fb3c4fb03202246a|6cbf97efefdd7d51|-1715866509||t20418.5981161088s|s295587321b|295587321|rds|local|vector|||12.906|Vectorized input to `element_text()` is not officially supported. ℹ Results may be unexpected or may change in future versions of ggplot2.. Using the `size` aesthetic with geom_segment was deprecated in ggplot2 3.4.0. ℹ Please use the `linewidth` aesthetic instead.|
+plot_reg_model1|stem|50f1f796f286fd5d|fb3c4fb03202246a|c6615e4d580bb1ff|-1715866509||t20418.6129446046s|s293986424b|293986424|rds|local|vector|||10.265|Vectorized input to `element_text()` is not officially supported. ℹ Results may be unexpected or may change in future versions of ggplot2.. Using the `size` aesthetic with geom_segment was deprecated in ggplot2 3.4.0. ℹ Please use the `linewidth` aesthetic instead.|
