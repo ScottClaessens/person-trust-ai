@@ -66,7 +66,8 @@ plot_regression_model1 <- function(fit) {
       ),
       strip.placement = "outside",
       strip.background = element_blank(),
-      strip.text = element_text(size = 11, vjust = 1)
+      strip.text = element_text(size = 11, vjust = 1),
+      panel.grid = element_blank()
     )
   # save
   ggsave(
