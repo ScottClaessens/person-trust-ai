@@ -58,6 +58,26 @@ list(
       )
     )
   ),
+  # plot variation
+  tar_target(
+    plot_sd,
+    plot_sd_pars(
+      list(
+        post_baseline_trust,
+        post_baseline_reliable,
+        post_baseline_competent,
+        post_baseline_genuine,
+        post_baseline_ethical,
+        post_baseline_autonomy,
+        post_baseline_potential_good,
+        post_baseline_potential_harm,
+        post_baseline_interpretability,
+        post_baseline_explainability,
+        post_baseline_humanlike,
+        post_baseline_predictability
+      )
+    )
+  ),
   
   #### Fit regression models predicting trust ####
   

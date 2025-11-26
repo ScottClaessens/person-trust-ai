@@ -45,16 +45,6 @@ plot_reg_model2_predictability|stem|c186cf84cab5732c|95be1793e915cbae|13abd85573
 sessionInfo|stem|4d420e734d24941e|6f338939dd102f8f|2c530c1562a7fbd1|1164010252||t20417.6951171109s|s44b|44|rds|local|vector|||11|package 'brms' was built under R version 4.4.3. package 'mice' was built under R version 4.4.3. package 'patchwork' was built under R version 4.4.3. package 'psych' was built under R version 4.4.3|
 plot_cors|stem|1d4967b6cb6a8cb0|56bcf1828f1e969e|89f10e7fcb8e64df|-727877256||t20417.6951276253s|s233700b|233700|rds|local|vector|||0.656||
 plot_diffs|stem|704df7ed10a63a67|1ea1949885710dd8|1da64583e1111997|2073359124||t20418.5565653672s|s11222956b|11222956|rds|local|vector|||0.906|Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0. ℹ Please use `linewidth` instead.. Removed 1 row containing missing values or values outside the scale range (`geom_segment()`).. Removed 1 row containing missing values or values outside the scale range (`geom_segment()`).|
-fit_baseline_model|function|a0608a8b212f461b
-plot_mean_diffs_general_AI|function|2c4061d48851981c
-plot_regression_moderators|function|1b506f56437573b7
-plot_correlations|function|40ea14c3b128b2e6
-impute_data|function|ebaea23b0794d125
-load_data|function|f1fffdb4b5ebdaa3
-plot_regression_model1|function|c8a5701664b3bfbb
-extract_means_baseline|function|cb4f144ff8308c1a
-fit_regression_model|function|3e01b71284a9edbb
-plot_AI_usage|function|8076150adba5918e
 post_baseline_reliable|stem|6873f784060a7180|2e0159053ea9bf34|4d0f7c3f7d16c056|1861301840||t20418.5643359011s|s33417764b|33417764|rds|local|vector|||2.61|Method 'posterior_samples' is deprecated. Please see ?as_draws for recommended alternatives.|
 post_baseline_competent|stem|1db31b83d7e5c6d4|ae9f64282e59be62|da2cd21fa173bcc0|736175556||t20418.564409374s|s33416186b|33416186|rds|local|vector|||1.547|Method 'posterior_samples' is deprecated. Please see ?as_draws for recommended alternatives.|
 post_baseline_potential_good|stem|e2e728113e6b887e|ab1cd4e6178e27e9|12965e3cbb4ff3af|-774477928||t20418.5644801387s|s33423138b|33423138|rds|local|vector|||1.359|Method 'posterior_samples' is deprecated. Please see ?as_draws for recommended alternatives.|
@@ -67,3 +57,15 @@ post_baseline_ethical|stem|fd0e284a699948f6|b4fc7bdc296db4be|bbdbf34869024a88|75
 post_baseline_humanlike|stem|8150b38e95851905|d57d779212f14ccb|86d40ad6f1005de8|1924313683||t20418.5649488984s|s33415799b|33415799|rds|local|vector|||1.297|Method 'posterior_samples' is deprecated. Please see ?as_draws for recommended alternatives.|
 post_baseline_interpretability|stem|5d31024ad01123b0|d4379d93a2cf3680|2cf413d8dba75236|1986037215||t20418.5650197388s|s33412794b|33412794|rds|local|vector|||1.437|Method 'posterior_samples' is deprecated. Please see ?as_draws for recommended alternatives.|
 post_baseline_autonomy|stem|4b7d0de6a692100a|eb04aaccb926109b|b4c9d6d2033cfe7c|51573141||t20418.5650887176s|s33395307b|33395307|rds|local|vector|||1.344|Method 'posterior_samples' is deprecated. Please see ?as_draws for recommended alternatives.|
+plot_sd|stem|522a968c51b58e9b|6d9349793313a2ad|7354c396e4f9220c|-938237916||t20418.5782537985s|s403199922b|403199922|rds|local|vector|||1.64|Using the `size` aesthetic with geom_segment was deprecated in ggplot2 3.4.0. ℹ Please use the `linewidth` aesthetic instead.|
+fit_baseline_model|function|a0608a8b212f461b
+plot_mean_diffs_general_AI|function|2c4061d48851981c
+plot_regression_moderators|function|1b506f56437573b7
+plot_correlations|function|40ea14c3b128b2e6
+impute_data|function|ebaea23b0794d125
+load_data|function|f1fffdb4b5ebdaa3
+plot_regression_model1|function|c8a5701664b3bfbb
+extract_means_baseline|function|cb4f144ff8308c1a
+fit_regression_model|function|3e01b71284a9edbb
+plot_sd_pars|function|e6c9a157b9e2b119
+plot_AI_usage|function|8076150adba5918e
