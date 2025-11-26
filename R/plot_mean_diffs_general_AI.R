@@ -1,6 +1,5 @@
 # function to plot differences in means from general AI
-plot_mean_diffs_general_AI <- function(list_means, file,
-                                       limits = c(-2.5, 2.5)) {
+plot_mean_diffs_general_AI <- function(list_means) {
   # function to get difference from general AI
   convert_means_to_diffs <- function(means) {
     # get general AI mean
@@ -30,8 +29,9 @@ plot_mean_diffs_general_AI <- function(list_means, file,
       outcome = factor(
         str_to_sentence(str_replace(outcome, "_", " ")),
         levels = c("Trust", "Reliable", "Competent", "Genuine", "Ethical",
-                   "Interpretability", "Explainability", "Predictability",
-                   "Autonomy", "Humanlike", "Potential good", "Potential harm")
+                   "Autonomy", "Potential good", "Potential harm", 
+                   "Interpretability", "Explainability", "Humanlike", 
+                   "Predictability")
       )
     )
   # get order for plot
@@ -57,28 +57,29 @@ plot_mean_diffs_general_AI <- function(list_means, file,
       size = 0.3
     ) +
     geom_pointrange(
-      fatten = 0.5,
+      fatten = 0.4,
       size = 1
     ) +
-    facet_wrap(. ~ outcome, nrow = 1) +
+    facet_wrap(. ~ outcome, nrow = 2) +
     scale_x_continuous(
       name = "Posterior mean difference from 'General AI'",
-      limits = limits
+      limits = c(-3, 3)
     ) +
     ylab(NULL) +
     theme_bw() +
     theme(
       panel.grid = element_blank(),
       strip.background = element_blank(),
+      strip.text = element_text(size = 7),
       axis.text.x = element_text(size = 7),
-      axis.text.y = element_text(size = 7.5)
+      axis.text.y = element_text(size = 7)
     )
   # save
   ggsave(
-    file = file,
+    file = "plots/differences.pdf",
     plot = p,
-    height = 3.5,
-    width = 7
+    height = 5,
+    width = 6
   )
   return(p)
 }

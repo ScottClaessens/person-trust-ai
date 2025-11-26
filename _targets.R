@@ -35,46 +35,27 @@ list(
                   "predictability")
     ),
     tar_target(fit_baseline, fit_baseline_model(data, outcome)),
-    tar_target(means_baseline, extract_means_baseline(fit_baseline, outcome))
+    tar_target(means_baseline, extract_means_baseline(fit_baseline, outcome)),
+    tar_target(post_baseline, posterior_samples(fit_baseline))
   ),
   # plot differences from general AI
   tar_target(
-    plot_diffs1,
+    plot_diffs,
     plot_mean_diffs_general_AI(
       list(
         means_baseline_trust,
         means_baseline_reliable,
         means_baseline_competent,
         means_baseline_genuine,
-        means_baseline_ethical
-      ),
-      file = "plots/differences1.pdf"
-    )
-  ),
-  tar_target(
-    plot_diffs2,
-    plot_mean_diffs_general_AI(
-      list(
-        means_baseline_trust,
+        means_baseline_ethical,
+        means_baseline_autonomy,
+        means_baseline_potential_good,
+        means_baseline_potential_harm,
         means_baseline_interpretability,
         means_baseline_explainability,
-        means_baseline_predictability
-      ),
-      file = "plots/differences2.pdf"
-    )
-  ),
-  tar_target(
-    plot_diffs3,
-    plot_mean_diffs_general_AI(
-      list(
-        means_baseline_trust,
-        means_baseline_autonomy,
         means_baseline_humanlike,
-        means_baseline_potential_good,
-        means_baseline_potential_harm
-      ),
-      file = "plots/differences3.pdf",
-      limits = c(-3.5, 3.5)
+        means_baseline_predictability
+      )
     )
   ),
   
