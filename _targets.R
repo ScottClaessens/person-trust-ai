@@ -78,6 +78,26 @@ list(
       )
     )
   ),
+  # plot distances
+  tar_target(
+    plot_distances_baseline,
+    plot_distances(
+      list(
+        means_baseline_trust,
+        means_baseline_reliable,
+        means_baseline_competent,
+        means_baseline_genuine,
+        means_baseline_ethical,
+        means_baseline_autonomy,
+        means_baseline_potential_good,
+        means_baseline_potential_harm,
+        means_baseline_interpretability,
+        means_baseline_explainability,
+        means_baseline_humanlike,
+        means_baseline_predictability
+      )
+    )
+  ),
   
   #### Fit regression models predicting trust ####
   
