@@ -99,7 +99,7 @@ plot_correlations <- function(data, AI_type = "General AI") {
       limits = c(-1, 1)
     ) +
     labs(
-      title = paste0("Correlations for '", AI_type, "'"),
+      title = paste0("Correlations for ", AI_type),
       x = NULL,
       y = NULL
     ) +
@@ -108,7 +108,10 @@ plot_correlations <- function(data, AI_type = "General AI") {
       panel.border = element_blank(),
       axis.ticks = element_blank(),
       axis.text.x = element_text(angle = 35, hjust = 1, vjust = 1),
-      legend.ticks = element_blank() 
+      plot.title = element_text(size = 12, hjust = 0.5, face = "bold"),
+      legend.ticks = element_blank(),
+      legend.text = element_text(size = 7),
+      legend.key.size = unit(5, "mm")
     )
   # lower case AI type name for file saving
   convert_string <- function(x) {
