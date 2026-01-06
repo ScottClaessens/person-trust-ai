@@ -38,10 +38,10 @@ list(
     tar_target(means_baseline, extract_means_baseline(fit_baseline, outcome)),
     tar_target(post_baseline, posterior_samples(fit_baseline))
   ),
-  # plot differences from general AI
+  # plot means
   tar_target(
-    plot_diffs,
-    plot_mean_diffs_general_AI(
+    plot_means_baseline,
+    plot_means(
       list(
         means_baseline_trust,
         means_baseline_reliable,
@@ -60,7 +60,7 @@ list(
   ),
   # plot variation
   tar_target(
-    plot_sd,
+    plot_sd_baseline,
     plot_sd_pars(
       list(
         post_baseline_trust,

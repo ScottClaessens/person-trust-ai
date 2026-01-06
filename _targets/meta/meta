@@ -26,9 +26,6 @@ means_baseline_genuine|stem|e2d3ea8632d2df52|5632b6f4810faea3|07740a65b17a8db9|-
 means_baseline_reliable|stem|951a08341c222c7f|9fce7f125e3cce01|0d5f16bf2841afe4|-1616285148||t20411.6755475469s|s911974b|911974|rds|local|vector|||1.188||
 means_baseline_explainability|stem|214d6df672a47a6c|291f6e0545f9ec74|f47bb992436cdcc7|-1392821456||t20411.675572193s|s921849b|921849|rds|local|vector|||1.172||
 means_baseline_predictability|stem|db0b7f1817695b0f|74888fbac725e759|7c51957c741e3650|549364829||t20411.6755953816s|s921079b|921079|rds|local|vector|||1.125||
-plot_diffs2|stem|8360b3d8aef844bb|f912506152f1810b|fab7dac33e250998|-1616824336||t20411.6930853245s|s3865371b|3865371|rds|local|vector|||0.516|Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0. ℹ Please use `linewidth` instead.|
-plot_diffs1|stem|f9f4fd047414d56f|7f1102806902d885|a2ff51a0fc462c5b|510629407||t20411.6930964806s|s4767066b|4767066|rds|local|vector|||0.328||
-plot_diffs3|stem|206a112daf5596a9|d13cd82908616179|b01691d124952fae|67126713||t20411.6931094776s|s4787611b|4787611|rds|local|vector|||0.469||
 data_imputed|stem|c0328ff74e19cb70|1b0e57aa577534c4|aab1a528a9660019|-304612476||t20411.7594576425s|s210936b|210936|rds|local|vector|||8.219|Number of logged events: 4. Number of logged events: 2|
 fit_regression_model1|stem|0f91a52135dcc8c2|f06cb37284e990b2|c07e1bfae86b6ea7|303769788||t20411.8060713097s|s178127959b|178127959|rds|local|vector|||1847.485||
 fit_regression_model2_autonomy|stem|d577c5ce1ec81255|02879b2676ae6e37|c07e1bfae86b6ea7|8978486||t20412.7997724907s|s197056604b|197056604|rds|local|vector|||2204.062||
@@ -42,7 +39,6 @@ plot_reg_model2_autonomy|stem|d87d3901dbc5119c|e9dbb61d3af9a2cd|f95916249ea60759
 fit_regression_model2_predictability|stem|be637d2e1fd82a08|eda4eb1f31e960ea|c07e1bfae86b6ea7|-1461412642||t20413.553306245s|s196946320b|196946320|rds|local|vector|||5139.422||
 plot_reg_model2_predictability|stem|c186cf84cab5732c|95be1793e915cbae|13abd85573632adb|-344549638||t20413.5540559933s|s197695258b|197695258|rds|local|vector|||41.547|Predictions are treated as continuous variables in 'conditional_effects' by default which is likely invalid for ordinal families. Please set 'categorical' to TRUE.. Predictions are treated as continuous variables in 'conditional_effects' by default which is likely invalid for ordinal families. Please set 'categorical' to TRUE.|
 sessionInfo|stem|4d420e734d24941e|6f338939dd102f8f|2c530c1562a7fbd1|1164010252||t20417.6951171109s|s44b|44|rds|local|vector|||11|package 'brms' was built under R version 4.4.3. package 'mice' was built under R version 4.4.3. package 'patchwork' was built under R version 4.4.3. package 'psych' was built under R version 4.4.3|
-plot_diffs|stem|704df7ed10a63a67|1ea1949885710dd8|1da64583e1111997|2073359124||t20418.5565653672s|s11222956b|11222956|rds|local|vector|||0.906|Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0. ℹ Please use `linewidth` instead.. Removed 1 row containing missing values or values outside the scale range (`geom_segment()`).. Removed 1 row containing missing values or values outside the scale range (`geom_segment()`).|
 post_baseline_reliable|stem|6873f784060a7180|2e0159053ea9bf34|4d0f7c3f7d16c056|1861301840||t20418.5643359011s|s33417764b|33417764|rds|local|vector|||2.61|Method 'posterior_samples' is deprecated. Please see ?as_draws for recommended alternatives.|
 post_baseline_competent|stem|1db31b83d7e5c6d4|ae9f64282e59be62|da2cd21fa173bcc0|736175556||t20418.564409374s|s33416186b|33416186|rds|local|vector|||1.547|Method 'posterior_samples' is deprecated. Please see ?as_draws for recommended alternatives.|
 post_baseline_potential_good|stem|e2e728113e6b887e|ab1cd4e6178e27e9|12965e3cbb4ff3af|-774477928||t20418.5644801387s|s33423138b|33423138|rds|local|vector|||1.359|Method 'posterior_samples' is deprecated. Please see ?as_draws for recommended alternatives.|
@@ -55,10 +51,11 @@ post_baseline_ethical|stem|fd0e284a699948f6|b4fc7bdc296db4be|bbdbf34869024a88|75
 post_baseline_humanlike|stem|8150b38e95851905|d57d779212f14ccb|86d40ad6f1005de8|1924313683||t20418.5649488984s|s33415799b|33415799|rds|local|vector|||1.297|Method 'posterior_samples' is deprecated. Please see ?as_draws for recommended alternatives.|
 post_baseline_interpretability|stem|5d31024ad01123b0|d4379d93a2cf3680|2cf413d8dba75236|1986037215||t20418.5650197388s|s33412794b|33412794|rds|local|vector|||1.437|Method 'posterior_samples' is deprecated. Please see ?as_draws for recommended alternatives.|
 post_baseline_autonomy|stem|4b7d0de6a692100a|eb04aaccb926109b|b4c9d6d2033cfe7c|51573141||t20418.5650887176s|s33395307b|33395307|rds|local|vector|||1.344|Method 'posterior_samples' is deprecated. Please see ?as_draws for recommended alternatives.|
-plot_sd|stem|522a968c51b58e9b|6d9349793313a2ad|7354c396e4f9220c|-938237916||t20418.5782537985s|s403199922b|403199922|rds|local|vector|||1.64|Using the `size` aesthetic with geom_segment was deprecated in ggplot2 3.4.0. ℹ Please use the `linewidth` aesthetic instead.|
 plot_reg_model1|stem|50f1f796f286fd5d|fb3c4fb03202246a|c6615e4d580bb1ff|-1715866509||t20418.6129446046s|s293986424b|293986424|rds|local|vector|||10.265|Vectorized input to `element_text()` is not officially supported. ℹ Results may be unexpected or may change in future versions of ggplot2.. Using the `size` aesthetic with geom_segment was deprecated in ggplot2 3.4.0. ℹ Please use the `linewidth` aesthetic instead.|
+plot_cors|stem|905823f8b118675d|56bcf1828f1e969e|c3ca1cd492e96340|-727877256||t20459.4978197839s|s234247b|234247|rds|local|vector|||0.407||
+plot_sd_baseline|stem|8546433429467a26|6d9349793313a2ad|7354c396e4f9220c|-862622021||t20459.541861237s|s403199889b|403199889|rds|local|vector|||2.375|Using the `size` aesthetic with geom_segment was deprecated in ggplot2 3.4.0. ℹ Please use the `linewidth` aesthetic instead.|
+plot_means_baseline|stem|a3262a7cbbbca391|dce31456f94108e0|e314e6f1a2259dca|879474749||t20459.5777807917s|s114378952b|114378952|rds|local|vector|||1.546|Vectorized input to `element_text()` is not officially supported. ℹ Results may be unexpected or may change in future versions of ggplot2.. 20 unknown levels in `f`: Autonomous killer drone, AI superintelligence, Robot soldier, DeepSeek, Predictive sentencing algorithm, Self-driving car, Predictive policing algorithm, AI therapist, Instagram filter, Military cybersecurity AI, Medical triage AI, DALL-E, Skin cancer diagnosis app, ChatGPT, Facial recognition AI, Air traffic control AI, Apple's Siri, Audio transcription AI, Google Maps AI, and Robot vacuum. 20 unknown levels in `f`: Autonomous killer drone, AI superintelligence, Robot soldier, DeepSeek, Predictive sentencing algorithm, Self-driving car, Predictive policing algorithm, AI therapist, Instagram filter, Military cybersecurity AI, Medical triage AI, DALL-E, Skin cancer diagnosis app, ChatGPT, Facial recognition AI, Air traffic control AI, Apple's Siri, Audio transcription AI, Google Maps AI, and Robot vacuum|
 fit_baseline_model|function|a0608a8b212f461b
-plot_mean_diffs_general_AI|function|2c4061d48851981c
 plot_regression_moderators|function|1b506f56437573b7
 plot_correlations|function|8de1fa38f991be7f
 impute_data|function|ebaea23b0794d125
@@ -66,6 +63,6 @@ load_data|function|f1fffdb4b5ebdaa3
 plot_regression_model1|function|947931b63642af56
 extract_means_baseline|function|cb4f144ff8308c1a
 fit_regression_model|function|3e01b71284a9edbb
+plot_means|function|37f5dc1a7268fe9a
 plot_sd_pars|function|e6c9a157b9e2b119
 plot_AI_usage|function|8076150adba5918e
-plot_cors|stem|905823f8b118675d|56bcf1828f1e969e|c3ca1cd492e96340|-727877256||t20459.4978197839s|s234247b|234247|rds|local|vector|||0.407||
